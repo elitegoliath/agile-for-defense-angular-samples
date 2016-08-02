@@ -1,0 +1,11 @@
+{[
+ {
+     id: '1',
+     name: 'USA',
+     description: 'Best country in the entire universe...probably.'
+ }, {
+     id: '2',
+     name: 'Russia',
+     description: 'Vodka.'
+ }
+]}
