@@ -37,3 +37,7 @@ h1 {
 body {
   margin: 2em;
 }
+
+.lit {
+    background: yellow;
+}

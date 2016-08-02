@@ -11,9 +11,35 @@
         { id: 15, name: 'Australia' }
     ]);
     
-    countryModule.service('CountryService', function CountryService($q, COUNTRIES) {
+    countryModule.service('CountryService', ['$q', 'COUNTRIES', function ($q, COUNTRIES) {
         this.getCountries = function () {
             return $q.when(COUNTRIES);
         }
+    }]);
+    
+    countryModule.directive('countryInfo', function () {
+        return {
+            restrict: 'E',
+            templateUrl: 'country-info.html',
+            controller: 'CountryInfoCtrl',
+            controllerAs: 'cictrl',
+            scope: {
+                country: '=value'
+            },
+            link: function (scope) {
+                scope.expanded = false;
+                scope.starred = false;
+            }
+        };
     });
+    
+    countryModule.controller('CountryInfoCtrl', ['$scope', function ($scope) {
+        $scope.toggleStar = function () {
+            $scope.starred = !$scope.starred;
+        };
+        
+        $scope.toggleExpand = function () {
+            $scope.expanded = !$scope.expanded;
+        };
+    }]);
 })()
