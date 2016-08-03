@@ -12,7 +12,7 @@ Two applications able to be ran locally. 1 created with Angular, the other with 
 			* Angular 2 was completely rebuilt rather than using Angular 1.x and adding to it
 			* Designed for mobile applications and optimized for memory efficiency and less CPU cycles
 				* Designed with touch interfaces, limited screen real estate, and mobile hardware in mind
-				* Also means increased computing performance and rsponsiveness on desktops
+				* Also means increased computing performance and responsiveness on desktops
 			* Improved integration with IDEs and development ecosystems
 			* Documentation is improved as types are explicitly documented
 			* No need for $scope
