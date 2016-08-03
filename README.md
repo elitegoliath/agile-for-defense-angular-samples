@@ -43,7 +43,7 @@ Items we're looking to demonstrate with this application include
     * change of class or style on elements
 
 ### Application Design:
-Load a list of items from a json file and display them. Each item can be starred using an icon that will change style when starred. Each item will have details that can be displayed when a show/hide button/icon/link is clicked. The list will have a search box that allows the user to filter items displayed in the list by title.
+Load a list of items and display them. Each item can be starred using an icon that will change style when starred. Each item will have details that can be displayed when a show/hide button/icon/link is clicked.
 
 ### Sources:
 * https://scotch.io/tutorials/why-you-shouldnt-be-scared-of-typescript
