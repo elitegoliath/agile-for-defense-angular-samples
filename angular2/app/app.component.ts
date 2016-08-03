@@ -20,6 +20,10 @@ import { CountryService } from './country.service';
 // annotations.
 import { Country } from './country';
 
+// TODO: Describe
+import { CountryInfoComponent } from './country-info.component';
+
+
 // Component is simply an annotation on a JavaScript class.
 @Component({
 	// selector is what the html element name will be.
@@ -27,7 +31,8 @@ import { Country } from './country';
     // Template defines the component's html. We use an ES6 multiline string here for formatting purposes.
     templateUrl: `app/app.html`,
   	// Definition of which providers to use for dependency injection of other components.
-    providers: [CountryService]
+    providers: [CountryService],
+    directives: [CountryInfoComponent]
 })
 
 /**

@@ -22,6 +22,8 @@ var core_1 = require('@angular/core');
 // root directory. We use this in the AppComponent to get the list of countries from
 // our mock web service.
 var country_service_1 = require('./country.service');
+// TODO: Describe
+var country_info_component_1 = require('./country-info.component');
 // Component is simply an annotation on a JavaScript class.
 var AppComponent = (function () {
     /**
@@ -60,7 +62,8 @@ var AppComponent = (function () {
             // Template defines the component's html. We use an ES6 multiline string here for formatting purposes.
             templateUrl: "app/app.html",
             // Definition of which providers to use for dependency injection of other components.
-            providers: [country_service_1.CountryService]
+            providers: [country_service_1.CountryService],
+            directives: [country_info_component_1.CountryInfoComponent]
         }), 
         __metadata('design:paramtypes', [country_service_1.CountryService])
     ], AppComponent);
