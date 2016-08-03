@@ -1,9 +1,9 @@
 <div>
     <div class="countryTitle">{{country.name}}
         <span class="star" ng-class="{lit:starred}" ng-click="toggleStar()">{{starred ? '&#9733;' : '&#9734;'}}</span>
+        <span class="moreless" ng-click="toggleExpand()">{{expanded ? '&lt;' : '&gt;'}}</span>
     </div>
-    <div class="countryDescription">
-        <span class="moreless" ng-click="toggleExpand()">{{expanded ? 'less' : 'more'}}</span>
-        <span class="details" ng-show="expanded">{{country.description}}</span>
+    <div class="countryDescription" ng-show="expanded">
+        <span class="details">{{country.description}}</span>
     </div>
 </div>

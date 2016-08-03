@@ -20,7 +20,7 @@ body {
 .countryTitle {
     display: inline-block;
     width: 38%;
-    padding-top: 10px;
+    padding: 10px;
     padding-bottom: 16px;
     word-wrap: normal;
     background-color: darkcyan;
@@ -47,8 +47,17 @@ body {
     margin-top: -10px;
 }
 
+.star:hover {
+    cursor: pointer;
+}
+
 .moreless {
     display: inline-block;
+    float: right;
+}
+
+.moreless:hover {
+    cursor: pointer;
 }
 
 .details {
