@@ -25,7 +25,7 @@ import { Country } from './country';
 	// selector is what the html element name will be.
     selector: 'my-app',
     // Template defines the component's html. We use an ES6 multiline string here for formatting purposes.
-    templateUrl: `app/countryList.html`,
+    templateUrl: `app/app.html`,
   	// Definition of which providers to use for dependency injection of other components.
     providers: [CountryService]
 })
