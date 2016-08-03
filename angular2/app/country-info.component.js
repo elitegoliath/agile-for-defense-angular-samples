@@ -19,6 +19,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 // familiar to you.
 // TODO: describe Input
 var core_1 = require('@angular/core');
+// TODO: describe
+var common_1 = require('@angular/common');
 // We also import the Country class, which is a simple JavaScript class. We bring this
 // in since we are going to be working on a Country[]. TypeScript provides optional,
 // Strong typing to JavaScript, so we help ourselves out by giving variables type 
@@ -27,7 +29,15 @@ var country_1 = require('./country');
 // Component is simply an annotation on a JavaScript class.
 var CountryInfoComponent = (function () {
     function CountryInfoComponent() {
+        this.starred = false;
+        this.expanded = false;
     }
+    CountryInfoComponent.prototype.toggleStar = function () {
+        this.starred = !this.starred;
+    };
+    CountryInfoComponent.prototype.toggleExpand = function () {
+        this.expanded = !this.expanded;
+    };
     __decorate([
         core_1.Input(), 
         __metadata('design:type', country_1.Country)
@@ -36,8 +46,9 @@ var CountryInfoComponent = (function () {
         core_1.Component({
             // selector is what the html element name will be.
             selector: 'country-info',
-            // Template defines the component's html. We use an ES6 multiline string here for formatting purposes.
-            templateUrl: "app/country-info.html"
+            // Template defines the component's html.
+            templateUrl: 'app/country-info.html',
+            directives: [common_1.NgClass]
         }), 
         __metadata('design:paramtypes', [])
     ], CountryInfoComponent);

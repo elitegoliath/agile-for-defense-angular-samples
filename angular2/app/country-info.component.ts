@@ -10,6 +10,9 @@
 // TODO: describe Input
 import { Component, Input } from '@angular/core';
 
+// TODO: describe
+import { NgClass } from '@angular/common';
+
 // We also import the Country class, which is a simple JavaScript class. We bring this
 // in since we are going to be working on a Country[]. TypeScript provides optional,
 // Strong typing to JavaScript, so we help ourselves out by giving variables type 
@@ -20,8 +23,9 @@ import { Country } from './country';
 @Component({
 	// selector is what the html element name will be.
     selector: 'country-info',
-    // Template defines the component's html. We use an ES6 multiline string here for formatting purposes.
-    templateUrl: `app/country-info.html`
+    // Template defines the component's html.
+    templateUrl: 'app/country-info.html',
+    directives: [NgClass]
 })
 
 /**
@@ -29,9 +33,20 @@ import { Country } from './country';
  */
 export class CountryInfoComponent {
     
+    starred = false;
+    expanded = false;
+    
     /**
      * Allow a Country object to be given as input for the component.
      */
     @Input() country: Country;
+    
+    toggleStar() {
+        this.starred = !this.starred;
+    }
+    
+    toggleExpand() {
+        this.expanded = !this.expanded;
+    }
 
 }

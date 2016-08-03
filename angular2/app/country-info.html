@@ -1,8 +1,10 @@
 <div class="countryTitleContainer">
-    <div class="countryTitle">
-        {{country.name}}
+    <div class="countryTitle">{{country.name}}
+        <span class="star" [ngClass]="{lit:starred}" (click)="toggleStar()">&#9734;</span>
     </div>
     <div class="countryDescription">
-        {{country.description}}
+        <span class="moreless" (click)="toggleExpand()">{{expanded ? 'less' : 'more'}}</span>
+        <!-- Note: The hidden attribute tells the browser to change the display property, but it does not make the display property important by default. If you have any display css on the element to be hidden, this will override the behavior of hidden. In our case, we added css to correct the hidden behavior: "[hidden] { display: none !important; }" -->
+        <span class="details" [hidden]="!expanded">{{country.description}}</span>
     </div>
 </div>

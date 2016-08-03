@@ -7,6 +7,10 @@ body {
   margin: 2em;
 }
 
+.lit {
+    background: yellow;
+}
+
 .countryTitleContainer {
     vertical-align: middle;
     min-width: 200px;
@@ -41,6 +45,18 @@ body {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     margin-top: -10px;
+}
+
+.moreless {
+    display: inline-block;
+}
+
+.details {
+    display: inline-block;
+}
+
+[hidden] {
+    display: none !important;
 }
 
  /*
