@@ -1,6 +1,6 @@
 <div>
     <div class="countryTitle">{{country.name}} <span class="star" ng-class="{lit:starred}" ng-click="toggleStar()">&#9734;</span></div>
     <div class="countryDescription"><span class="moreless" ng-click="toggleExpand()">{{expanded ? 'less' : 'more'}}</span>
-        <div class="details" ng-show="expanded">Details</div>
+        <div class="details" ng-show="expanded">{{country.description}}</div>
     </div>
 </div>
