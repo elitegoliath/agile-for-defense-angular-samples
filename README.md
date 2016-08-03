@@ -10,7 +10,7 @@ Two applications able to be ran locally. 1 created with Angular, the other with 
     * Why pay attention to Angular 2
 		* From Angular 1 
 			* Angular 2 was completely rebuilt rather than using Angular 1.x and adding to it
-			* Designed for mobile applications ad optimized for memory efficiency and less CPU cycles
+			* Designed for mobile applications and optimized for memory efficiency and less CPU cycles
 				* Designed with touch interfaces, limited screen real estate, and mobile hardware in mind
 				* Also means increased computing performance and rsponsiveness on desktops
 			* Improved integration with IDEs and development ecosystems
@@ -19,7 +19,7 @@ Two applications able to be ran locally. 1 created with Angular, the other with 
 			* Everything encapsulated in a component, no need for controllers
 				* A component is a directive with a template ( Angular 1.x controller + directive = Angular 2 component)
 				* Considerably easier to read API with less jargon
-			* Angular 1.x requires teh entire stack to be written using Angular, whereas Angular 2 allows for segmentation within the app to be written independently of each other
+			* Angular 1.x requires the entire stack to be written using Angular, whereas Angular 2 allows for segmentation within the app to be written independently of each other
 		* From other Frameworks
 			* Streamlined implementation of dependency injection
 			* Can leverage performance gain by rendering HTML on the server or a web worker
