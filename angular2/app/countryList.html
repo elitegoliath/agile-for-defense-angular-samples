@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+<!-- 
+        ngFor is a structural directive that lets us iterate over any array like object.
+        Here, we iterate out list of countries and create list items with the country name
+        as the content of the item.
+     -->
+<div class="countryTitleContainer" *ngFor="let country of countries">
+    <div class="countryTitle">
+        {{country.name}}
+    </div>
+    <div class="countryDescription">
+        {{country.description}}
+    </div>
+</div>

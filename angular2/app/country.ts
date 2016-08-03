@@ -24,4 +24,14 @@ export class Country {
 	 * @type {String}
 	 */
 	name: string;
+
+    /**
+	 * This is the description of the country. It's a simple String object.
+	 *
+	 * This variable is also annotated and the TypeScript compiler will complain
+	 * if code assigns a value of a different type to it.
+	 * 
+	 * @type {String}
+	 */
+	description: string;
 }

@@ -7,6 +7,42 @@ body {
   margin: 2em;
 }
 
+.countryTitleContainer {
+    vertical-align: middle;
+    min-width: 200px;
+    max-width: 80%;
+}
+
+.countryTitle {
+    display: inline-block;
+    width: 38%;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    word-wrap: normal;
+    background-color: darkcyan;
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+}
+
+.countryDescription {
+    display: inline-block;
+    width: 58%;
+    padding-top: 26px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    word-wrap: normal;
+    background-color: white;
+    color: #000033;
+    text-align: left;
+    font-size: 20px;
+    border: 2px solid black;
+    border-left-style: hidden;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: -10px;
+}
+
  /*
   * See https://github.com/angular/angular.io/blob/master/public/docs/_examples/styles.css
   * for the full set of master styles used by the documentation samples

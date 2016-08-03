@@ -58,7 +58,7 @@ var AppComponent = (function () {
             // selector is what the html element name will be.
             selector: 'my-app',
             // Template defines the component's html. We use an ES6 multiline string here for formatting purposes.
-            template: "\n  \t<h1>{{title}}</h1>\n  \t<ul>\n  \t\t<!-- \n  \t\t\tngFor is a structural directive that lets us iterate over any array like object.\n  \t\t\tHere, we iterate out list of countries and create list items with the country name\n  \t\t\tas the content of the item.\n  \t\t -->\n  \t\t<li *ngFor=\"let country of countries\">\n  \t\t\t{{country.name}}\n  \t\t</li>\n  \t</ul>\n  \t",
+            templateUrl: "app/countryList.html",
             // Definition of which providers to use for dependency injection of other components.
             providers: [country_service_1.CountryService]
         }), 

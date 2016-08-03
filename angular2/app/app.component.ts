@@ -23,23 +23,11 @@ import { Country } from './country';
 // Component is simply an annotation on a JavaScript class.
 @Component({
 	// selector is what the html element name will be.
-  selector: 'my-app',
-  // Template defines the component's html. We use an ES6 multiline string here for formatting purposes.
-  template: `
-  	<h1>{{title}}</h1>
-  	<ul>
-  		<!-- 
-  			ngFor is a structural directive that lets us iterate over any array like object.
-  			Here, we iterate out list of countries and create list items with the country name
-  			as the content of the item.
-  		 -->
-  		<li *ngFor="let country of countries">
-  			{{country.name}}
-  		</li>
-  	</ul>
-  	`,
+    selector: 'my-app',
+    // Template defines the component's html. We use an ES6 multiline string here for formatting purposes.
+    templateUrl: `app/countryList.html`,
   	// Definition of which providers to use for dependency injection of other components.
-  	providers: [CountryService]
+    providers: [CountryService]
 })
 
 /**
